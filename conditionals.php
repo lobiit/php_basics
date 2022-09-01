@@ -31,3 +31,17 @@ $first_post = !empty($posts) ? $posts[0] : 'No posts';
 echo $first_post;
 $second_post = $posts[1] ?? null;
 echo $second_post;
+
+// Switch
+$favcolor = 'yellow';
+
+switch ($favcolor){
+    case 'yellow':
+    case 'black':
+    case 'blue':
+        echo 'Your favorite color is '. $favcolor;
+        break;
+    default:
+        echo  'Yor favorite color is not yellow, blue or black';
+
+}
