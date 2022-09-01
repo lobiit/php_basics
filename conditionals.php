@@ -17,10 +17,17 @@ if ($t < 6){
     echo 'Good evening';
 }
 
-$posts = ['First post'];
+$posts = ['First post', 'secondPost'];
 
 if (!empty($posts)){
     echo ' '. $posts[0];
 } else {
     echo 'No Posts';
 }
+
+// Ternary operator
+echo !empty($posts) ? $posts[0] : 'No posts';
+$first_post = !empty($posts) ? $posts[0] : 'No posts';
+echo $first_post;
+$second_post = $posts[1] ?? null;
+echo $second_post;
