@@ -19,3 +19,13 @@ do {
     $x++;
 }
 while ($x<15);
+
+// For each loop
+$posts = ['sam', 'smith', 'fire', 'on'];
+for ($x=0 ; $x<count($posts); $x++){
+    echo $posts[$x] . '<br>';
+}
+
+foreach ($posts as $index => $post) {
+    echo $index . '-' . $post . '<br>';
+}
